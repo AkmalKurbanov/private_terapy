@@ -1,0 +1,45 @@
+.main-screen__form.tabs-form
+  h3.tabs-form__title Find a Therapist
+  span.tabs-form__prompt Select the type of consultation
+  .tab
+    ul.tabs
+      li
+        a(href='#') Online
+      li
+        a(href='#') Face-to-face
+    .tab_content
+      .tabs_item 
+        form(action="")
+          .tabs-form__input
+            input(type="text" placeholder="What problem do you have?")
+            button(type="submit")
+              i.icon-search       
+        span.tabs-form__prompt.tabs-form__prompt--warranty
+          i.icon-warranty      
+          | 100% Confidentially face-to-face, <br> audio call & messaging    
+      .tabs_item                                                          
+        form(action="")
+        
+          .tabs-form__input-wrap
+            .tabs-form__input.tabs-form__input--loc
+              input(type="text" placeholder="Enter your location")
+              .tabs-form__current-loc-icon
+                i.icon-marker
+              button(type="submit" class="tabs-form__current-loc")
+                i.icon-current
+            span.tabs-form__prompt.tabs-form__prompt--prompt-input 
+              | Tap 
+              i.icon-current
+              |  on right to access your current location     
+
+          .tabs-form__input-wrap
+            .tabs-form__input
+              input(type="text" placeholder="What problem do you have?")
+              button(type="submit")
+                i.icon-search              
+          
+        span.tabs-form__prompt.tabs-form__prompt--warranty
+          i.icon-warranty      
+          | 100% Confidentially face-to-face, <br> audio call & messaging    
+      
+      

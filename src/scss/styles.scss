@@ -1,0 +1,40 @@
+// Сторонние библиотеки 
+// @import "../js/libs/--/--/";
+
+//---------------------------------------------
+
+// css файлы библиотек/плагинов
+// @import "../../node_modules/--/--/";
+
+// @import "../../node_modules/normalize.css/normalize.css";
+//---------------------------------------------
+
+// подключение сгенерированных иконок(fontello),
+// FontAwesome
+
+@import "../assets/icons/fontello/css/icon.css";
+// @import "../assets/icons/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css";
+
+//---------------------------------------------
+
+// подключение css файлов
+
+@import "fonts";
+@import "variables";
+@import "mixins/media";
+
+
+//---------------------------------------------
+
+
+//---------------------------------------------
+
+// Компоненты
+
+@import "components/base";
+@import "components/hamburger";
+@import "components/menu";
+@import "components/header";
+@import "components/main_screen";
+@import "components/tabs";
+@import "components/footer";

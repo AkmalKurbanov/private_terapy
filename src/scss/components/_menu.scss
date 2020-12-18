@@ -1,0 +1,169 @@
+.menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: rem(20px);
+  background-color: rgba(42, 46, 59, 0.699);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+
+  &__wrap {
+    padding-left: rem(30px);
+
+    @include lg {
+      padding-left: rem(25px);
+    }
+
+    @include md {
+      padding-left: rem(20px);
+    }
+
+    @include sm {
+      padding: 0;
+    }
+
+
+    ul {
+      li {
+        list-style-type: none;
+        margin-bottom: rem(10px);
+
+        a {
+          color: $wc;
+          font-size: rem(30px);
+
+          @include md {
+            font-size: rem(25px);
+          }
+
+          @include sm {
+            font-size: rem(20px);
+          }
+
+          @include xs {
+            font-size: rem(16px);
+          }
+
+          &:hover {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    display: none;
+    margin-bottom: rem(30px);
+
+    @include xs {
+      display: block;
+      margin-bottom: rem(20px);
+    }
+
+    .navbar__links {
+      @include xs {
+        display: block;
+      }
+
+      li {
+        padding: 0;
+
+        &:after {
+          display: none;
+        }
+
+        a {
+          font-size: rem(30px);
+
+          @include md {
+            font-size: rem(25px);
+          }
+
+          @include sm {
+            font-size: rem(20px);
+          }
+
+          @include xs {
+            font-size: rem(15px);
+          }
+
+          &:after {
+            background-color: $wc;
+          }
+
+          &:hover {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .navbar__drop-down {
+      margin-top: rem(5px);
+
+      li {
+        padding: 0 rem(12px);
+        margin: 0;
+
+        &:hover {
+          a {
+            color: $wc;
+          }
+        }
+
+        a {
+          color: #4f4f4f;
+          ;
+        }
+      }
+    }
+  }
+}
+
+
+.content__wrap {
+  transition: 1s;
+  overflow: hidden;
+}
+
+.transform-active {
+  transform: scale(0.7) translate3d(30%, 0, 0);
+  position: relative;
+
+  @include md {
+    transform: scale(0.7) translate3d(50%, 0, 0);
+  }
+
+  @include sm {
+    transform: scale(0.7) translate3d(70%, 0, 0);
+  }
+
+  @include xs {
+    transform: scale(0.7) translate3d(90%, 0, 0);
+  }
+
+  .main-screen {
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(42, 46, 59, 0.3);
+      z-index: 9;
+    }
+  }
+}
+
+
+.is-active {}
+
+.is-froze {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}

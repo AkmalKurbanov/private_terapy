@@ -1,0 +1,12 @@
+.menu
+  .menu__wrap
+    .navbar
+    ul
+      mixin menu(item)
+        li
+          a(href="#")=item
+      +menu('Search Practitioner')    
+      +menu('Services')    
+      +menu('Reviews')    
+      +menu('Blog')    
+      +menu('Contact')    

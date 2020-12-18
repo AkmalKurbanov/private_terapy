@@ -1,0 +1,5 @@
+@import "mixins/fontface";
+
+@include font-face("Avenir", "../assets/fonts/Avenir-Heavy", 800);
+@include font-face("Avenir", "../assets/fonts/AvenirLTStd-Medium", 500);
+@include font-face("Avenir", "../assets/fonts/AvenirLT-Roman", 400);
